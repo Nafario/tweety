@@ -1,9 +1,9 @@
 module.exports = {
-    future: {},
-    purge: [],
-    theme: {
-      extend: {},
-    },
-    variants: {},
-    plugins: [],
-  }
+  future: {},
+  purge: ['./resources/views/**/*.blade.php', './resources/css/**/*.css'],
+  theme: {
+    extend: {},
+  },
+  variants: {},
+  plugins: [],
+}

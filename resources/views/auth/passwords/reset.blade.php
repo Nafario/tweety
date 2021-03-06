@@ -17,8 +17,9 @@
 
                                 <div class="col-md-6">
                                     <input id="email" type="email"
-                                        class="form-control @error('email') is-invalid @enderror" name="email"
-                                        value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
+                                        class="form-control border py-1 px-2 focus:outline-none w-56 mb-5 @error('email') is-invalid @enderror"
+                                        name="email" value="{{ $email ?? old('email') }}" required autocomplete="email"
+                                        autofocus>
 
                                     @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -29,13 +30,12 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="password"
-                                    class="col-md-4 col-form-label text-md-right">{{ __('Password') }}
+                                <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}
                                 </label>
                                 <div class="col-md-6">
                                     <input id="password" type="password"
-                                        class="form-control @error('password') is-invalid @enderror" name="password"
-                                        required autocomplete="new-password">
+                                        class="form-control border py-1 px-2 focus:outline-none w-56 mb-5 @error('password') is-invalid @enderror"
+                                        name="password" required autocomplete="new-password">
 
                                     @error('password')
                                     <span class="invalid-feedback" role="alert">
